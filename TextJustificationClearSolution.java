@@ -42,7 +42,7 @@ class Solution {
                 .append(space)
                 .append(remainder-- > 0 ? " " : "");
         
-        return padResult(result.toString().trim(), maxWidth);
+        return padResult(result.toString(), maxWidth);
     }
     
     private int wordsLength(int left, int right, String[] words) {
