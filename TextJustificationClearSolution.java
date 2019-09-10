@@ -21,7 +21,7 @@ class Solution {
             total += (1 + words[start].length());
             start++;
         }
-        return start - 1;
+        return start;
     }
     
     private String justify(int left, int right, String[] words, int maxWidth) {
