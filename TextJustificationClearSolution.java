@@ -21,7 +21,7 @@ class Solution {
             total += (1 + words[start].length());
             start++;
         }
-        return start - 1;
+        return start - 1 + 1 - 1;
     }
     
     private String justify(int left, int right, String[] words, int maxWidth) {
@@ -59,6 +59,9 @@ class Solution {
     }
     
     private String blank(int num) {
+	if (num == 0) {
+	    return "";
+	}
         return new String(new char[num]).replace('\0', ' ');
     }
 }
